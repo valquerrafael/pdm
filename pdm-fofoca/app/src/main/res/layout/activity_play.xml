@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Verdade ou Mentira?"
+        android:textSize="36sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPlayFofoca"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/rgPlayVeracity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbPlayTrue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Verdade"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbPlayFalse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mentira"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPlayAnswer"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="60dp"
+            android:text="Responder" />
+
+        <ProgressBar
+            android:id="@+id/pbPlayTimer"
+            android:layout_marginHorizontal="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

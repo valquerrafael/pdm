@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:text="Jogo da Fofoca"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/etRegisterFofoca"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/rgRegisterStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp" >
+
+        <RadioButton
+            android:id="@+id/rbRegisterTrue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Verdade"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbRegisterFalse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mentira"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="25dp">
+
+        <Button
+            android:id="@+id/btnRegisterSave"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12.5dp"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btnRegisterCancel"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12.5dp"
+            android:text="Cancelar" />
+
+    </LinearLayout>
+
+</LinearLayout>
