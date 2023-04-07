@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -24,12 +25,14 @@ class MainActivity : AppCompatActivity() {
         this.rvNames = findViewById(R.id.rvNames)
         this.fabAdd = findViewById(R.id.fabAdd)
 
-        this.fabAdd.setOnClickListener{ add() }
+        this.fabAdd.setOnClickListener { add() }
 
         this.rvNames.adapter = MyAdapter(this.list)
         (this.rvNames.adapter as MyAdapter).onItemClickRecyclerView = OnItemClick()
 
         this.tts = TextToSpeech(this, null)
+
+        ItemTouchHelper(OnSwipe()).attachToRecyclerView(this.rvNames)
     }
 
     fun add(){
@@ -55,6 +58,24 @@ class MainActivity : AppCompatActivity() {
         override fun onItemClick(position: Int) {
             val name = this@MainActivity.list[position]
             this@MainActivity.tts.speak(name, TextToSpeech.QUEUE_FLUSH, null, null)
+        }
+    }
+
+    inner class OnSwipe: ItemTouchHelper.SimpleCallback(
+        ItemTouchHelper.DOWN or ItemTouchHelper.UP,
+        ItemTouchHelper.START or ItemTouchHelper.END
+    ) {
+        override fun onMove(
+            recyclerView: RecyclerView,
+            viewHolder: RecyclerView.ViewHolder,
+            target: RecyclerView.ViewHolder
+        ): Boolean {
+            (this@MainActivity.rvNames.adapter as MyAdapter).change(viewHolder.adapterPosition, target.adapterPosition)
+            return true
+        }
+
+        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+            (this@MainActivity.rvNames.adapter as MyAdapter).remove(viewHolder.adapterPosition)
         }
     }
 }
