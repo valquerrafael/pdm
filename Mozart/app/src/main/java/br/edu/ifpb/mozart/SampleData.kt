@@ -3,69 +3,56 @@ package br.edu.ifpb.mozart
 object SampleData {
     val conversationSample = listOf(
         Message(
-            "Colleague",
-            "Test...Test...Test..."
+            "Mozart",
+            "De você eu tenho Dó."
         ),
         Message(
-            "Colleague",
-            "List of Android versions:\n" +
-                    "Android KitKat (API 19)\n" +
-                    "Android Lollipop (API 21)\n" +
-                    "Android Marshmallow (API 23)\n" +
-                    "Android Nougat (API 24)\n" +
-                    "Android Oreo (API 26)\n" +
-                    "Android Pie (API 28)\n" +
-                    "Android 10 (API 29)\n" +
-                    "Android 11 (API 30)\n" +
-                    "Android 12 (API 31)\n"
+            "Mozart",
+            "Quando eu estou no carro, só dirijo de Ré."
         ),
         Message(
-            "Colleague",
-            "I think Kotlin is my favorite programming language.\n" +
-                    "It's so much fun!"
+            "Mozart",
+            "Hoje o tempo está frio, acho que é um Sol menor."
         ),
         Message(
-            "Colleague",
-            "Searching for alternatives to XML layouts..."
+            "Mozart",
+            "Poxa, Sol-Lá-mento..."
         ),
         Message(
-            "Colleague",
-            "Hey, take a look at Jetpack Compose, it's great!\n" +
-                    "It's the Android's modern toolkit for building native UI." +
-                    "It simplifies and accelerates UI development on Android." +
-                    "Less code, powerful tools, and intuitive Kotlin APIs :)"
+            "Mozart",
+            "Eu acho tocar piano bem Fá-cil."
         ),
         Message(
-            "Colleague",
-            "It's available from API 21+ :)"
+            "Mozart",
+            "Ela estava se achando, mas a fiz cair em Si."
         ),
         Message(
-            "Colleague",
-            "Writing Kotlin for UI seems so natural, Compose where have you been all my life?"
+            "Mozart",
+            "Ele estava iludido, mas fiz ele cair na Ré-al."
         ),
         Message(
-            "Colleague",
-            "Android Studio next version's name is Arctic Fox"
+            "Mozart",
+            "Ela estava reclamando muito, então eu disse:\n" +
+                    "Deixa de\n" +
+                    "Mi\n" +
+                    "Mi\n" +
+                    "Mi\n"
         ),
         Message(
-            "Colleague",
-            "Android Studio Arctic Fox tooling for Compose is top notch ^_^"
+            "Mozart",
+            "Eu não gosto de música eletrônica, prefiro música Clássica."
         ),
         Message(
-            "Colleague",
-            "I didn't know you can now run the emulator directly from Android Studio"
+            "Mozart",
+            "O professor falou que minha nota foi 5, mas ainda não consegui tocá-la."
         ),
         Message(
-            "Colleague",
-            "Compose Previews are great to check quickly how a composable layout looks like"
+            "Mozart",
+            "Ele estava doente, mas depois de um tempo ele se Ré-cuperou."
         ),
         Message(
-            "Colleague",
-            "Previews are also interactive after enabling the experimental setting"
-        ),
-        Message(
-            "Colleague",
-            "Have you tried writing build.gradle with KTS?"
+            "Mozart",
+            "Vi Beethoven na rua hoje e o chamei, mas ele não me ouviu."
         ),
     )
 }
